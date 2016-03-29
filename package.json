@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-to-js-style",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CSS files go in, JavaScript files that inject style tags go out.",
   "main": "index.js",
   "repository": "spacerockzero/gulp-css-to-js",
