@@ -8,7 +8,6 @@ var through = require('through2');
 
 module.exports = function injectCSS() {
   var stream = through.obj(function(file, enc, cb) {
-    
     var template = 'function injectStyles(rule) {\n'+
       'var div = document.createElement("div");\n'+
       'div.innerHTML = "&shy;<style>" + rule + "</style>";\n'+
