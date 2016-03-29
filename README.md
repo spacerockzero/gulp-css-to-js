@@ -38,3 +38,8 @@ gulp.task('css-to-js', function(){
     .pipe(gulp.dest('./dist'));
 });
 ```
+
+TODO:
+- [ ] Use with multi-line css input
+- [ ] Automatically rename extension
+- [ ] Optionally externalize the function, to reduce duplication
