@@ -1,6 +1,7 @@
 # gulp-css-to-js-style
 
 CSS files go in, JavaScript files that inject style tags go out.
+This is especially handy when you are building a 3rd-party plugin that has a UI, and you want only one `.js` file output for easy use of your script.
 
 ## Usage
 
@@ -15,10 +16,10 @@ var concat    = require('gulp-concat');
 var injectCSS = require('gulp-css-to-js-style');
 
 gulp.task('css-to-js', function(){
-  gulp.src(paths.justiceCSS)
+  gulp.src('./src/**.css')
     .pipe(injectCSS())
-    .pipe(concat('justice-styles.js'))
-    .pipe(gulp.dest(paths.srcDir));
+    .pipe(concat('injected-styles.js'))
+    .pipe(gulp.dest('./dist'));
 });
 ```
 
@@ -29,11 +30,11 @@ var concat    = require('gulp-rename');
 var injectCSS = require('gulp-css-to-js-style');
 
 gulp.task('css-to-js', function(){
-  gulp.src(paths.justiceCSS)
+  gulp.src('./src/**.css')
     .pipe(injectCSS())
     .pipe(rename({
       extname: '.js'
     }))
-    .pipe(gulp.dest(paths.srcDir));
+    .pipe(gulp.dest('./dist'));
 });
 ```
