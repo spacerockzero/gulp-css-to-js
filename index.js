@@ -1,5 +1,7 @@
 'use strict';
 
+var through = require('through2');
+
 /**
  * Inject style tag with my minified, one-line css
  */
