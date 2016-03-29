@@ -11,5 +11,8 @@
     "node": ">=0.10.0"
   },
   "author": "Jakob Anderson",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-css-to-js-style": "spacerockzero/gulp-css-to-js-style"
+  }
 }
